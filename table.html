@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/c61eb31f26.js"></script> 
+
+<style>
+ .table td>input{
+    border:none;
+   
+ } 
+ body{
+    transition: background-color 0.3s;
+
+  }
+  .white{
+    background-color: black;
+    color: white;
+  }
+
+  body.white .table td > input {
+    background-color: black;
+    color: white; 
+  }
+ 
+
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-primary">
+
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Update Students details</a>
+              <a class="text-decoration-none ms-auto" style="color: white;">
+                <i class="fa fa-moon-o darka" aria-hidden="true"></i></a>
+                <a style="color:white;"class="text-decoration-none p-3" id="time"></a>    
+              <a  href="login.html"style="color:white;"class="text-decoration-none">Home</a>         
+      </nav>  
+</header>
+<div class="table-responsive">
+<div class="container" style="margin:0%">
+ 
+      <table class="table table-striped-table-hover"id="white" >
+        <form name="FORM" action="updatedetails.php" method="POST" class="form-control" >
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Id No</th>
+            <th scope="col-1">First Name</th>
+            <th scope="col-1">Last Name</th>
+            <th scope="col-1">Day</th>
+            <th scope="col-1">Date</th>
+            <th scope="col-1">Present/Absent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td ><input type="number"  name="id"placeholder="Enter Id Number"></td>
+            <td ><input type="text" name="fname" placeholder="First Name"></td>
+            <td ><input type="text" name="lname" placeholder="Last Name"></td>
+            <td><input type="text" name="eday" placeholder="Enter Day"></td>
+            <td><input type="number" name="edate"placeholder="date"></td>
+            <td><input type="text" name="pa"placeholder="Present/Absent"></td>
+           
+          </tr>
+          
+          <tr>
+           <th>2</th>
+           <td><input type="number" name="id1"placeholder="Enter Id Number"></td>
+           <td><input type="text" name="fname1" placeholder="First Name"></td>
+           <td><input type="text" name="lname1" placeholder="Last Name"></td>
+           <td><input type="text" name="eday1" placeholder="Enter Day"></td>
+           <td><input type="text" name="edate1" placeholder="date"></td>
+           <td><input type="text" name="pa1" placeholder="Present/Absent"></td>
+           </tr>
+
+           <tr>
+            <th>3</th>
+            <td><input type="number" name="id2"placeholder="Enter Id Number"></td>
+            <td><input type="text" name="fname2" placeholder="First Name"></td>
+            <td><input type="text" name="lname2" placeholder="Last Name"></td>
+            <td><input type="text" name="eday2" placeholder="Enter Day"></td>
+            <td><input type="text" name="edate2" placeholder="date"></td>
+            <td><input type="text" name="pa2" placeholder="Present/Absent"></td>
+            </tr>
+            <tr>
+              <th >4</th>
+              <td><input type="number" name="id3"placeholder="Enter Id Number"></td>
+              <td><input type="text" name="fname3" placeholder="First Name"></td>
+              <td><input type="text" name="lname3" placeholder="Last Name"></td>
+              <td><input type="text" name="eday3" placeholder="Enter Day"></td>
+              <td><input type="text" name="edate3" placeholder="date"></td>
+              <td><input type="text" name="pa3" placeholder="Present/Absent"></td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td><input type="number" name="id4"placeholder="Enter Id Number"></td>
+                <td><input type="text" name="fname4" placeholder="First Name"></td>
+                <td><input type="text" name="lname4" placeholder="Last Name"></td>
+                <td><input type="text" name="eday4" placeholder="Enter Day"></td>
+                <td><input type="text" name="edate4" placeholder="date"></td>
+                <td><input type="text" name="pa4" placeholder="Present/Absent"></td>
+                </tr>
+        </tbody>
+      </table>
+      <div class="container-fluid d-flex" style="justify-content:space-around;">
+        <div>
+          <label for="floatingTextarea">Remarks</label>
+          <textarea class="form-control " id="whi" placeholder="about students" id="floatingTextarea"></textarea>
+          </div>
+  <div>
+      <td> <button class="btn btn-primary " value="Update details">Submit</button></td>
+      </div>
+      </div>
+    </form>
+    </div>
+      </div>
+    <script src="tablescript.js"></script>
+</body>
+</html>

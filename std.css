@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#a{
+    margin-top:420px;
+    justify-content: space-around;
+    position: relative;
+    top:100px;
+    z-index: 5;
+}
+body{
+ background-image:url('https://www.perrytech.edu/cache/img/0/7/4/9/6/074967bdbe05802103ec2499be9e42cc.jpg') ;  
+ background-repeat: no-repeat;
+  background-image: cover;
+}
